@@ -1,0 +1,13 @@
+footer {
+    background-color: rgb(44, 62, 80);
+}
+
+footer + div {
+    background-color: #1A252F;
+}
+
+@media only screen and (max-width: 720px) {
+    footer div {
+        flex-direction: column !important;
+    }
+}

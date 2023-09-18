@@ -1,0 +1,20 @@
+.contact{
+    min-height: calc(100vh - 106px);
+    background-color: #fff;
+}
+label{
+    position: relative;
+    z-index: 3;
+    transition: top 600ms ease;
+}
+input{
+    position: relative;
+    z-index: 9;
+}
+.form-control:focus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #dee2e6;
+    box-shadow: none;
+}

@@ -1,0 +1,12 @@
+nav{
+    background-color: rgb(44, 62, 80);
+    transition: padding 500ms ease;
+}
+.link-is-active{
+    background-color: #1ABC9C;
+    color: #fff;
+    border-radius:8px ;
+}
+.nav-link{
+    border-radius: 8px;
+}

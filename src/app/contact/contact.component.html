@@ -1,0 +1,26 @@
+<div class="contact d-flex justify-content-center flex-column">
+    <app-middle-lines [color]="selectedColor" [title]="contactTitle"></app-middle-lines>
+    <div class=" d-flex justify-content-center align-items-center flex-column w-50 mx-auto mt-5">
+        <form class="p-2 container w-75" [formGroup]="contactForm">
+            <div class="my-3 ">
+                <label for="userName" class="form-label text-success ps-2" [style.top.px]="isUserNameFilled() ? 0 : 38">userName:</label>
+                <input type="text" formControlName="userName" name="userName" class="form-control border-end-0 border-top-0 border-start-0" placeholder="userName:">
+            </div>
+            <div class="my-3 ">
+                <label for="userAge" class="form-label text-success ps-2" [style.top.px]="isUserAgeFilled() ? 0 : 38">userAge:</label>
+                <input type="number" formControlName="userAge" name="userAge" class="form-control border-end-0 border-top-0 border-start-0" placeholder="userAge:">
+            </div>
+            <div class="my-3 ">
+                <label for="userEmail" class="form-label text-success ps-2" [style.top.px]="isUserEmailFilled() ? 0 : 38">userEmail:</label>
+                <input type="email" formControlName="userEmail" name="userEmail" class="form-control border-end-0 border-top-0 border-start-0" placeholder="userEmail">
+            </div>
+            <div class="my-3">
+                <label for="userPassword" class="form-label text-success ps-2" [style.top.px]="isUserPasswordFilled() ? 0 : 38">userPassword:</label>
+                <input type="password" formControlName="userPassword" name="userPassword" class="form-control border-end-0 border-top-0 border-start-0" placeholder="userPassword:">
+            </div>
+        </form>
+        <div class="my-3 mx-auto">
+            <button class="btn btn-success">Send Message</button>
+        </div>
+    </div>
+</div>

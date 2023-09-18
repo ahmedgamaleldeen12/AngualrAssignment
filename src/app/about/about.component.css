@@ -1,0 +1,9 @@
+.about{
+    min-height: calc(100vh - 106px);
+    background-color: #1ABC9C;
+}
+@media only screen and (max-width:720px) {
+    .about-content{
+        flex-direction: column !important;
+    }
+}

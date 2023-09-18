@@ -1,0 +1,23 @@
+.portfolio{
+    min-height: calc(100vh - 106px);
+    background-color: #fff;
+}
+.layer {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(26, 188, 156, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    left: 0;
+    justify-content: center;
+    align-items: center; 
+    transition: all 0.2s;
+}
+
+.col-md-4:hover .layer {
+    top: 0;
+}
+.layer i {
+    font-size: 45px;
+}

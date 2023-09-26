@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center; 
     transition: all 0.2s;
+    cursor:pointer;
 }
 
 .col-md-4:hover .layer {

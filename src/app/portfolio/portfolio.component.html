@@ -3,7 +3,7 @@
   <div class="container p-3">
     <div class="row g-3">
       <div class="col-md-4 p-3">
-        <div class="overflow-hidden position-relative rounded-3">
+        <div class="overflow-hidden position-relative rounded-3" (click)="displayImg('assets/poert1.png')">
           <img src="assets/poert1.png" class="w-100 rounded-3" />
           <div class="layer">
             <i class="fa-solid fa-plus" style="color: #ffffff"></i>
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="overflow-hidden position-relative rounded-3">
+        <div class="overflow-hidden position-relative rounded-3" (click)="displayImg('assets/port2.png')">
           <img src="assets/port2.png" class="w-100 rounded-3" />
           <div class="layer">
             <i class="fa-solid fa-plus" style="color: #ffffff"></i>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="overflow-hidden position-relative rounded-3">
+        <div class="overflow-hidden position-relative rounded-3" (click)="displayImg('assets/port3.png')">
           <img src="assets/port3.png" class="w-100 rounded-3" />
           <div class="layer">
             <i class="fa-solid fa-plus" style="color: #ffffff"></i>
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="overflow-hidden position-relative rounded-3">
+        <div class="overflow-hidden position-relative rounded-3" (click)="displayImg('assets/poert1.png')">
           <img src="assets/poert1.png" class="w-100 rounded-3" />
           <div class="layer">
             <i class="fa-solid fa-plus" style="color: #ffffff"></i>
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="overflow-hidden position-relative rounded-3">
+        <div class="overflow-hidden position-relative rounded-3" (click)="displayImg('assets/port2.png')">
           <img src="assets/port2.png" class="w-100 rounded-3" />
           <div class="layer">
             <i class="fa-solid fa-plus" style="color: #ffffff"></i>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="col-md-4 p-3">
-        <div class="overflow-hidden position-relative rounded-3">
+        <div class="overflow-hidden position-relative rounded-3" (click)="displayImg('assets/port3.png')">
           <img src="assets/port3.png" class="w-100 rounded-3" />
           <div class="layer">
             <i class="fa-solid fa-plus" style="color: #ffffff"></i>
@@ -52,4 +52,11 @@
       </div>
     </div>
   </div>
+</div>
+
+<div *ngIf="flagVarToShow" (click)="closeImg($event)"
+  class=" bg-primary bg-opacity-25 position-fixed d-flex z-1 justify-content-center align-items-center h-100 w-100 top-0 start-0">
+  <img [src]="imgSrc" class=" opacity-100 img-fluid position-relative" alt="" id="dipalyedImgID"
+    style="width: 600px;" />
+
 </div>
